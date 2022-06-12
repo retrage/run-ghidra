@@ -11,5 +11,10 @@ jobs:
 
       - uses: ./
         with:
-          import: /bin/ls
-          args: "-overwrite -recursive"
+          import: samples/DoubleGetVariable.efi
+          plugins: 'https://github.com/retrage/efiSeek/releases/download/v0.0.3/ghidra_10.1.4_PUBLIC_20220604_efiSeek.zip'
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: analysis
+          path: analysis.log

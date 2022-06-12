@@ -23,6 +23,10 @@ inputs:
     description: 'Specifies additional arguments for Ghidra headless analyzer. Optional.'
     required: false
     default: ''
+  plugins:
+    description: 'URLs of pre-built Ghidra plugins'
+    required: false
+    default: ''
 
 outpus:
   log:
