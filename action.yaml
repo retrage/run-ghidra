@@ -2,7 +2,6 @@ name: 'run-ghidra'
 description: 'Run Ghidra headless analyzer'
 
 # TODO: Support opening existing projects
-# TODO: Support for importing Ghidra plugins
 inputs:
   project_location:
     description: 'The directory that will contain a newly created project. Optional.'
