@@ -22,5 +22,3 @@ mkdir -p "$INPUT_PROJECT_LOCATION"
   -log "$INPUT_LOG" \
   "${args[@]}"
 echo "::endgroup::"
-
-echo "::set-output name=log::$(cat "$INPUT_LOG")"
