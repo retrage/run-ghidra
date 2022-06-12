@@ -6,7 +6,7 @@ inputs:
   project_location:
     description: 'The directory that will contain a newly created project. Optional.'
     required: false
-    default: '/tmp/projects'
+    default: 'projects'
   project_name:
     description: 'The name of new project to be created. Optional.'
     required: false
@@ -17,15 +17,12 @@ inputs:
   log:
     description: 'Sets the location of the file that stores logging information. Optional.'
     required: false
-    default: 'analysis.log'
   args:
     description: 'Specifies additional arguments for Ghidra headless analyzer. Optional.'
     required: false
-    default: ''
   plugins:
     description: 'URLs of pre-built Ghidra plugins'
     required: false
-    default: ''
 
 outpus:
   log:
