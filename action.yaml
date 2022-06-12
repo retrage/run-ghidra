@@ -2,7 +2,6 @@ name: 'run-ghidra'
 description: 'Run Ghidra headless analyzer'
 
 # TODO: Support opening existing projects
-# TODO: Provide default arguments format string
 # TODO: Support for importing Ghidra plugins
 inputs:
   project_location:
@@ -20,6 +19,10 @@ inputs:
     description: 'Sets the location of the file that stores logging information. Optional.'
     required: false
     default: 'analysis.log'
+  args:
+    description: 'Specifies additional arguments for Ghidra headless analyzer. Optional.'
+    required: false
+    default: ''
 
 outpus:
   log:
